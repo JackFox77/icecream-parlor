@@ -170,5 +170,3 @@ function deleteItem(index) {
     if(window.confirm( `do you want to remove 1${order.name}?`)){}
 }
 
-
-function purchase()

@@ -39,16 +39,16 @@
   <body class="debug">
     <!-- Bootstrap JavaScript Libraries -->
 
-    <header>
-      <nav>
-        <h3 class="bg-secondary text-light">Ice Cream Parlor</h3>
+    <header class="container-fluid">
+        <nav class="row">
+          <h3 class=" col bg-secondary text-light titlecard"><span class="pl-5"> Ice Cream Parlor</span></h3>
       </nav>
     </header>
 
     <main class="container-fluid">
       <section class="row">
         <div id="" class="col-8">
-            <h3 class="bg-secondary">Ice Cream</h3>
+            <h3 class="bg-secondary ">Ice Cream</h3>
           <div id="iceCream" class="row">
             
             <!-- <div class="col-3 iceCream" onclick="">
@@ -65,11 +65,11 @@
           <div id="toppings" class="row"></div>
         </div>
         <div class="col-4">
-          <h3 class="row totalCard py-3 px-2">
+          <h3 class="row totalCard py-3 px-2 sticky-top">
             Your Cart
             <div id="yourcart" class="row"></div>
             <div class="row">
-                 <div class="col-6"><b>total: $<span id="total"></span></b></div>
+                 <div class="col-6 "><b>total: $<span id="total"></span></b></div>
           <div class="col-6 text-end p-0">
             <button class="btn btn-outline-dark rounded" onclick="purchase()">Purchase </button>
             <button class="btn btn-outline-dark rounded" onclick="clearOrders()">clear</button>
