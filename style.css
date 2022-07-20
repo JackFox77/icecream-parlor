@@ -1,0 +1,14 @@
+main {
+  background-color: rgb(125, 151, 178);
+}
+
+.Picsize {
+  height: 13em;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.totalCard {
+  background-color: aliceblue;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body.debug .container,
+      body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+      }
+
+      body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+      }
+
+      body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+      }
+    </style>
+  </head>
+  <body class="debug">
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <header>
+      <nav>
+        <h3 class="bg-secondary text-light">Ice Cream Parlor</h3>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <section class="row">
+        <div id="" class="col-8">
+            <h3 class="bg-secondary">Ice Cream</h3>
+          <div id="iceCream" class="row">
+            
+            <!-- <div class="col-3 iceCream" onclick="">
+              <div class="">
+                <img class src="${item.image}" alt="" />
+                <p class="bg-black p-2 icecream-name mb-0"></p>
+                <p class="bg-black price p-2"></p>
+              </div>
+            </div> -->
+          </div>
+          <h3 class="bg-secondary">Containers</h3>
+          <div id="vessels" class="row"></div>
+          <h3 class="bg-secondary">Toppings</h3>
+          <div id="toppings" class="row"></div>
+        </div>
+        <div class="col-4">
+          <h3 class="row totalCard py-3 px-2">
+            Your Cart
+            <div id="yourcart" class="row"></div>
+            <div class="row">
+                 <div class="col-6"><b>total: $<span id="total"></span></b></div>
+          <div class="col-6 text-end p-0">
+            <button class="btn btn-outline-dark rounded" onclick="purchase()">Purchase </button>
+            <button class="btn btn-outline-dark rounded" onclick="clearOrders()">clear</button>
+          </div>
+        </div>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
