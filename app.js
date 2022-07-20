@@ -129,6 +129,7 @@ function drawTotal() {
     let subtotal = 0
     orders.forEach(order => subtotal += order.price)
     let totalElm = document.getElementById('total')
+    subtotal*=1.06
     totalElm.innerText = subtotal.toFixed(2)
 }
 
